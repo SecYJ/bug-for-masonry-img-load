@@ -1,0 +1,223 @@
+---
+title: ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: explore
+---
+
+<section class="container mt-3 mt-lg-5 mb-5 mb-lg-7">
+	<div class="row g-0 gx-lg-3 gy-2">
+		<div class="col-lg-9">
+			<div class="row g-0">
+				<div class="col-lg-4 artist-img"></div>
+				<div class="col-lg-8 bg-white p-3 border border-1">
+					<div
+						class="d-flex justify-content-between align-items-center mb-2"
+					>
+						<h2 class="fs-1 font-squada">Michael</h2>
+						<ul class="d-flex">
+							<li class="me-1">
+								<a href="#">
+									<i class="fa-brands fa-discord"></i>
+								</a>
+							</li>
+							<li class="me-1">
+								<a href="#">
+									<i class="fa-brands fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="me-1">
+								<a href="#">
+									<i class="fa-solid fa-globe"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<p class="font-squada mb-3">0x3ya666…88ef</p>
+					<p>
+						Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​
+					</p>
+				</div>
+			</div>
+		</div>
+		<ul class="col-lg-3 border border-1 bg-white p-0 mb-0">
+			<li
+				class="d-flex justify-content-between align-items-center p-2 border-bottom border-1"
+			>
+				<p class="fw-bold">販售中</p>
+				<span class="fs-4 font-squada">168</span>
+			</li>
+			<li
+				class="d-flex justify-content-between align-items-center p-2 border-bottom border-1"
+			>
+				<p class="fw-bold">地板價格</p>
+				<span class="fs-4 font-squada">0.6 ETH</span>
+			</li>
+			<li
+				class="d-flex justify-content-between align-items-center p-2 border-bottom border-1"
+			>
+				<p class="fw-bold">7 日成交</p>
+				<span class="fs-4 font-squada">8.8 ETH</span>
+			</li>
+			<li class="d-flex justify-content-between align-items-center p-2">
+				<p class="fw-bold">30 日成交</p>
+				<span class="fs-4 font-squada">23.1 ETH</span>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="container">
+	<!-- Nav Tab -->
+	<ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+		<li class="nav-item" role="presentation">
+			<button
+				class="nav-link art-nav-link active font-squada"
+				id="artWorks-tab"
+				data-bs-toggle="tab"
+				data-bs-target="#artWorks"
+				type="button"
+				role="tab"
+				aria-controls="home"
+				aria-selected="true"
+			>
+				Art Works<span class="fs-4 ms-2 fw-bold">系列作品</span>
+			</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button
+				class="nav-link art-nav-link font-squada"
+				id="collection-tab"
+				data-bs-toggle="tab"
+				data-bs-target="#collection"
+				type="button"
+				role="tab"
+				aria-controls="profile"
+				aria-selected="false"
+			>
+				Collection<span class="fs-4 ms-2 fw-bold">收藏品</span>
+			</button>
+		</li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content mb-7">
+		<div
+			class="tab-pane active"
+			id="artWorks"
+			role="tabpanel"
+			aria-labelledby="artWorks-tab"
+		>
+			<h3>追求者送我的花</h3>
+			<h3>我家窗前的鳥</h3>
+		</div>
+		<div
+			class="tab-pane collection"
+			id="collection"
+			role="tabpanel"
+			aria-labelledby="collection-tab"
+		>
+			<!-- data-masonry='{"percentPosition": true, "itemSelector": ".masonry-item", "columnWidth": ".masonry-sizer" }' -->
+			<div class="row gx-3 gy-6 masonry">
+				<div class="masonry-sizer col-6 col-md-4 col-lg-3"></div>
+				<div class="masonry-item col-6 col-md-4 col-lg-3">
+					<div class="artwork-img p-2 text-white mb-2">
+						<div
+							class="d-flex p-2 flex-column border border-1 border-white h-100"
+						>
+							<div class="mb-auto">
+								<p>唯一想擁有的人，唯一不可以擁有的人</p>
+								<span>300</span>
+							</div>
+							<div class="mt-auto ms-auto">
+								<a
+									href="#"
+									class="btn btn-outline-black triangle px-6 py-1 font-squada"
+									>MORE</a
+								>
+							</div>
+						</div>
+					</div>
+					<p class="fw-bold pb-2 border-bottom border-1">
+						區塊戀-他的私生活
+					</p>
+				</div>
+				<div class="masonry-item col-6 col-md-4 col-lg-3">
+					<img
+						src="assets/images/art10.jpg"
+						alt="art"
+						class="img-fluid bg-white p-3 mb-2"
+					/>
+					<p class="fw-bold pb-2 border-bottom border-1">
+						夏娃的醜聞
+					</p>
+				</div>
+				<div class="masonry-item col-6 col-md-4 col-lg-3">
+					<img
+						src="assets/images/art02.jpg"
+						alt="art"
+						class="img-fluid bg-white p-3 mb-2"
+					/>
+					<p class="fw-bold pb-2 border-bottom border-1">
+						藍色啤酒海
+					</p>
+				</div>
+				<div class="masonry-item col-6 col-md-4 col-lg-3">
+					<img
+						src="assets/images/art11.jpg"
+						alt="art"
+						class="img-fluid bg-white p-3 mb-2"
+					/>
+					<p class="fw-bold pb-2 border-bottom border-1">
+						沒有人愛我
+					</p>
+				</div>
+				<div class="masonry-item col-6 col-md-4 col-lg-3">
+					<img
+						src="assets/images/art12.jpg"
+						alt="art"
+						class="img-fluid bg-white p-3 mb-2"
+					/>
+					<p class="fw-bold pb-2 border-bottom border-1">
+						不哭不哭眼淚是珍珠
+					</p>
+				</div>
+				<div class="masonry-item col-6 col-md-4 col-lg-3">
+					<img
+						src="assets/images/art03.jpg"
+						alt="art"
+						class="img-fluid bg-white p-3 mb-2"
+					/>
+					<p class="fw-bold pb-2 border-bottom border-1">
+						十分鐘就到
+					</p>
+				</div>
+				<div class="masonry-item col-6 col-md-4 col-lg-3">
+					<img
+						src="assets/images/art04.jpg"
+						alt="art"
+						class="img-fluid bg-white p-3 mb-2"
+					/>
+					<p class="fw-bold pb-2 border-bottom border-1">
+						我這樣有美嗎
+					</p>
+				</div>
+				<div class="masonry-item col-6 col-md-4 col-lg-3">
+					<img
+						src="assets/images/art27.jpg"
+						alt="art"
+						class="img-fluid bg-white p-3 mb-2"
+					/>
+					<p class="fw-bold pb-2 border-bottom border-1">
+						我真的受傷了
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

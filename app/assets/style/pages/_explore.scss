@@ -1,0 +1,28 @@
+.artist-img{
+    background-image: url(../images/artist01.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 213px;
+    @include media-breakpoint-up(lg){
+        height: auto;
+    }
+}
+.art-nav-link{
+    color:#808080;
+    font-size: 32px;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    span{
+        display: none;
+        // margin-top: 16px;
+    }
+    @include media-breakpoint-up(lg){
+        padding: 16px 48px;
+        font-size: 48px;
+        span{
+            display: block;
+            
+        }
+    }
+}

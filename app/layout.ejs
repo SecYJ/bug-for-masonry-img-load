@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title><%- title %></title>
+		<link rel="shortcut icon" href="assets/images/logo.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		/>
+
+		<link rel="stylesheet" href="./assets/style/all.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg border-bottom border-1 p-0 mb-lg-5">
+			<div class="container">
+				<h1 class="py-2 py-lg-4 mb-0 me-6 flex-grow-1">
+					<a href="index.html"
+						><img
+							src="assets/images/logo.svg"
+							alt="logo"
+							class="img-fluid"
+					/></a>
+				</h1>
+				<form
+					class="d-flex ms-auto border-lg-left align-items-center search-form"
+				>
+					<div class="d-flex align-items-center justify-content-end">
+						<a href="#" class="fs-3 align-bottom search-back d-none"
+							><i class="fas fa-angle-left"></i
+						></a>
+						<input
+							class="form-control me-2 d-none d-md-block ps-lg-6 py-lg-5 search-bar"
+							type="search"
+							placeholder="搜尋作品名稱、藝術家名稱"
+							aria-label="Search"
+						/>
+					</div>
+					<button
+						type="button"
+						class="border-0 pe-md-6 py-md-5 search"
+					>
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+				<a
+					class="navbar-toggler px-1"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<i class="fas fa-bars navbar-toggler-icon"></i>
+				</a>
+				<div
+					class="collapse navbar-collapse justify-content-lg-end flex-grow-0"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav py-2 py-lg-0 mb-lg-0">
+						<li class="nav-item border-lg-left">
+							<a
+								class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold nav-border"
+								aria-current="page"
+								href="explore.html"
+								>探索</a
+							>
+						</li>
+						<li class="nav-item border-lg-left">
+							<a
+								class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold nav-border"
+								href="#"
+								>市值</a
+							>
+						</li>
+						<li class="nav-item border-lg-left">
+							<a
+								class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold"
+								href="#"
+								><span class="d-block d-lg-none">連結錢包</span
+								><i
+									class="d-none d-lg-block fas fa-wallet align-bottom mt-1"
+								></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<%- contents %>
+
+		<footer class="text-center border-top border-1">
+			<div class="border-top border-3 my-1">
+				<p class="p-3">© ART NFT. All Rights Reserved</p>
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+		<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+		<script src="./assets/js/vendors.js"></script>
+		<script src="./assets/js/all.js"></script>
+	</body>
+</html>
